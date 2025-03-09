@@ -20,14 +20,23 @@ Competitive-Coding-Library/
 ├── LICENSE          # Open-source license  
 
 🚀 Getting Started
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/AdityaSaxena914/competitive-coding-library.git
+
 cd competitive-coding-library
+
 2️⃣ Use a Snippet or Template
+
 C++ Fast I/O Snippet (snippets/fast_io.cpp)
+
 Binary Search Template (templates/binary_search.cpp)
+
 3️⃣ Run a Test Case
+
 g++ templates/binary_search.cpp -o binary_search  
+
 ./binary_search < test_cases/sample_input.txt  
 
 🛠️ Contribution Guide
