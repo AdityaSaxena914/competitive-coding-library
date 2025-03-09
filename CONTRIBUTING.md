@@ -39,24 +39,27 @@ git push origin feature-branch
 ```
 ### 6. Open a Pull Request (PR)
 
-Go to your forked repo on GitHub.
-
-Click on "Compare & pull request".
-
-Write a brief description of your changes and submit the PR.
+- Go to your forked repo on GitHub.
+- Click on "Compare & pull request".
+- Write a brief description of your changes and submit the PR.
 
 🔹 Contribution Guidelines
+
 ✅ Ensure the code is clean and well-documented.
+
 ✅ Use meaningful variable and function names.
+
 ✅ Follow best coding practices for readability and efficiency.
+
 ✅ Test your code before submitting.
 
 ⭐ Join the Community!
+
 If you find this project helpful, consider giving it a ⭐! Your contributions help improve the repository for everyone. Happy coding! 🚀
 
 
 #### ✅ Next Step:
-- Add this file as **`CONTRIBUTING.md`** in your repo.  
+- Add this file as **`CONTRIBUTING.md`** in your repo.
 - Let me know if you need any changes! 😊
 
 
