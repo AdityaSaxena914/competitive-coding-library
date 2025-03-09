@@ -14,9 +14,11 @@ Click on the **Fork** button at the top-right corner of this repository to creat
 git clone https://github.com/your-username/competitive-coding-library.git
 cd competitive-coding-library
 
+```
 ### 3. Create a New Branch
+```bash
 git checkout -b feature-branch
-
+```
 ### 4. Make Your Changes
 
 Snippets: Add reusable code snippets in the snippets/ folder.
@@ -28,12 +30,13 @@ Test Cases: Add edge cases and examples in test_cases/ to verify solutions.
 Documentation: Improve README.md or add explanations for existing code.
 
 ### 5. Commit Your Changes
+```bash
 git add .
 
 git commit -m "Add [feature/algorithm name]"
 
 git push origin feature-branch
-
+```
 ### 6. Open a Pull Request (PR)
 
 Go to your forked repo on GitHub.
