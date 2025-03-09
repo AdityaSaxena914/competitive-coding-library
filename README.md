@@ -19,7 +19,7 @@ Competitive-Coding-Library/  📁  (Main Project Folder)
 
 ## 🚀 How to Use
 1. Clone the repo:  
-git clone 
+git clone https://github.com/AdityaSaxena914/competitive-coding-library.git
 2. Use the snippets/templates in your code.  
 3. Contribute by adding new templates!  
 
