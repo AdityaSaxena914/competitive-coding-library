@@ -40,20 +40,28 @@ g++ templates/binary_search.cpp -o binary_search
 ./binary_search < test_cases/sample_input.txt  
 
 🛠️ Contribution Guide
+
 Want to contribute? Follow these steps:
 
 Fork the repository 🍴
+
 Create a new branch (git checkout -b feature-name)
+
 Add your snippets/templates in the respective folder
+
 Commit changes (git commit -m "Added [feature] snippet")
+
 Push (git push origin feature-name)
+
 Open a Pull Request
 
 📜 License
+
 This repository is open-source under the MIT License.
 
 📌 MIT License
 
 ⭐ Support
+
 If you find this useful, star 🌟 the repo and share it with others! 🚀
 
