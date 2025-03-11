@@ -1,21 +1,42 @@
 #include "templates/competitive.h"
 
 int32_t main() {
-    fast_io();  // Testing Fast I/O
+    fast_io();  // Enable fast I/O
 
-    cout << "GCD of 36 and 60: " << gcd(36, 60) << endl;
-    cout << "LCM of 36 and 60: " << lcm(36, 60) << endl;
+    cout << "Testing Competitive Coding Library 🚀\n\n";
 
+    // Testing GCD & LCM
+    int a = 24, b = 36;
+    cout << "GCD(" << a << ", " << b << ") = " << gcd(a, b) << '\n';
+    cout << "LCM(" << a << ", " << b << ") = " << lcm(a, b) << '\n';
+
+    // Testing Modular Exponentiation
     int base = 2, exp = 10;
-    cout << "2^10 mod 1e9+7: " << mod_exp(base, exp) << endl;
+    cout << base << "^" << exp << " % " << MOD << " = " << mod_exp(base, exp) << '\n';
 
-    int num = 29;
-    cout << num << (is_prime(num) ? " is prime" : " is not prime") << endl;
+    // Testing Modular Inverse
+    int num = 3;
+    cout << "Modular Inverse of " << num << " under mod " << MOD << " = " << mod_inverse(num) << '\n';
 
-    vector<int> factors = prime_factors(60);
-    cout << "Prime factors of 60: ";
+    // Testing Prime Check
+    int prime_candidate = 29;
+    cout << prime_candidate << " is " << (is_prime(prime_candidate) ? "Prime" : "Not Prime") << '\n';
+
+    // Testing Sieve of Eratosthenes
+    int limit = 50;
+    vector<bool> primes = sieve(limit);
+    cout << "Primes up to " << limit << ": ";
+    for (int i = 2; i <= limit; i++) {
+        if (primes[i]) cout << i << " ";
+    }
+    cout << '\n';
+
+    // Testing Prime Factorization
+    int number = 84;
+    vector<int> factors = prime_factors(number);
+    cout << "Prime Factors of " << number << ": ";
     for (int f : factors) cout << f << " ";
-    cout << endl;
+    cout << '\n';
 
     return 0;
 }
