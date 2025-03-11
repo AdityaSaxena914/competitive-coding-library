@@ -62,13 +62,13 @@ vector<bool> sieve(int n) {
 }
 
 // Prime Factorization (O(√n))
-vector<int> prime_factors(int n) {
-    vector<int> factors;
+vector<long long> prime_factors(long long n) {
+    vector<long long> factors;
     while (n % 2 == 0) {  // Factor out all 2s
         factors.push_back(2);
         n /= 2;
     }
-    for (int i = 3; i * i <= n; i += 2) {  // Factor out odd numbers
+    for (long long i = 3; i * i <= n; i += 2) {  // Factor out odd numbers
         while (n % i == 0) {
             factors.push_back(i);
             n /= i;
@@ -78,4 +78,14 @@ vector<int> prime_factors(int n) {
     return factors;
 }
 
+
+// Macros
+#define int long long
+#define pb push_back
+#define all(x) x.begin(), x.end()
+#define sz(x) (int)x.size()
+
+// Include All Templates
+#include "searching/binary_search.h"
+#include "searching/two_pointer.h"
 #endif // COMPETITIVE_H
