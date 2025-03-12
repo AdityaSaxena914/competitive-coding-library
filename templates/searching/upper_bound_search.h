@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-int upper_bound(const vector<int>& arr, int target) {
+int upper_bound_search(const vector<int>& arr, int target) {
     int left = 0, right = (int)arr.size();
     while (left < right) {
         int mid = left + (right - left) / 2;
