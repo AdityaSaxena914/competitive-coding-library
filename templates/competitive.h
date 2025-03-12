@@ -62,19 +62,23 @@ vector<bool> sieve(int n) {
 }
 
 // Prime Factorization (O(√n))
-vector<long long> prime_factors(long long n) {
-    vector<long long> factors;
+vector<pair<long long, int>> prime_factors(long long n) {
+    vector<pair<long long, int>> factors;
+    int count = 0;
     while (n % 2 == 0) {  // Factor out all 2s
-        factors.push_back(2);
         n /= 2;
+        count++;
     }
+    if (count > 0) factors.push_back({2, count});
     for (long long i = 3; i * i <= n; i += 2) {  // Factor out odd numbers
+        count = 0;
         while (n % i == 0) {
-            factors.push_back(i);
             n /= i;
+            count++;
         }
+        if (count > 0) factors.push_back({i, count});
     }
-    if (n > 1) factors.push_back(n);  // If n is still > 1, it's a prime
+    if (n > 1) factors.push_back({n,1});  // If n is still > 1, it's a prime
     return factors;
 }
 
@@ -85,7 +89,16 @@ vector<long long> prime_factors(long long n) {
 #define all(x) x.begin(), x.end()
 #define sz(x) (int)x.size()
 
-// Include All Templates
+// Include all searching algorithms
+#include "searching/linear_search.h"
 #include "searching/binary_search.h"
-#include "searching/two_pointer.h"
+#include "searching/lower_bound.h"
+#include "searching/upper_bound.h"
+#include "searching/first_occurrence.h"
+#include "searching/last_occurrence.h"
+#include "searching/count_occurrences.h"
+#include "searching/exponential_search.h"
+#include "searching/jump_search.h"
+#include "searching/ternary_search.h"
+#include "searching/two_pointer_search.h"
 #endif // COMPETITIVE_H

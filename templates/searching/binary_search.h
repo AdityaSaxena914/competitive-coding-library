@@ -4,15 +4,15 @@
 #include <vector>
 using namespace std;
 
-bool binary_search(const vector<int>& arr, int x) {
-    int left = 0, right = arr.size() - 1;
+bool binary_search(const vector<int>& arr, int target) {
+    int left = 0, right = (int)arr.size() - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] == x) return true;
-        else if (arr[mid] < x) left = mid + 1;
+        if (arr[mid] == target) return true;
+        else if (arr[mid] < target) left = mid + 1;
         else right = mid - 1;
     }
     return false;
 }
 
-#endif
+#endif // BINARY_SEARCH_H

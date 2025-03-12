@@ -1,42 +1,47 @@
 #include "templates/competitive.h"
 
 int32_t main() {
-    fast_io();  // Enable fast I/O
+    vector<int> arr = {1, 2, 2, 2, 3, 4, 5, 6, 6, 7};
+    int target = 2;
 
-    cout << "Testing Competitive Coding Library 🚀\n\n";
+    cout << "Array: ";
+    for (int num : arr) cout << num << " ";
+    cout << "\nTarget: " << target << "\n\n";
 
-    // Testing GCD & LCM
-    int a = 24, b = 36;
-    cout << "GCD(" << a << ", " << b << ") = " << gcd(a, b) << '\n';
-    cout << "LCM(" << a << ", " << b << ") = " << lcm(a, b) << '\n';
+    // Linear Search
+    cout << "Linear Search Index: " << linear_search(arr, target) << "\n";
 
-    // Testing Modular Exponentiation
-    int base = 2, exp = 10;
-    cout << base << "^" << exp << " % " << MOD << " = " << mod_exp(base, exp) << '\n';
+    // Binary Search
+    cout << "Binary Search Found: " << (binary_search(arr, target) ? "Yes" : "No") << "\n";
 
-    // Testing Modular Inverse
-    int num = 3;
-    cout << "Modular Inverse of " << num << " under mod " << MOD << " = " << mod_inverse(num) << '\n';
+    // Lower Bound
+    cout << "Lower Bound Index: " << lower_bound(arr, target) << "\n";
 
-    // Testing Prime Check
-    int prime_candidate = 29;
-    cout << prime_candidate << " is " << (is_prime(prime_candidate) ? "Prime" : "Not Prime") << '\n';
+    // Upper Bound
+    cout << "Upper Bound Index: " << upper_bound(arr, target) << "\n";
 
-    // Testing Sieve of Eratosthenes
-    int limit = 50;
-    vector<bool> primes = sieve(limit);
-    cout << "Primes up to " << limit << ": ";
-    for (int i = 2; i <= limit; i++) {
-        if (primes[i]) cout << i << " ";
-    }
-    cout << '\n';
+    // First Occurrence
+    cout << "First Occurrence Index: " << first_occurrence(arr, target) << "\n";
 
-    // Testing Prime Factorization
-    int number = 84;
-    vector<int> factors = prime_factors(number);
-    cout << "Prime Factors of " << number << ": ";
-    for (int f : factors) cout << f << " ";
-    cout << '\n';
+    // Last Occurrence
+    cout << "Last Occurrence Index: " << last_occurrence(arr, target) << "\n";
+
+    // Count Occurrences
+    cout << "Count Occurrences: " << count_occurrences(arr, target) << "\n";
+
+    // Exponential Search
+    cout << "Exponential Search Index: " << exponential_search(arr, target) << "\n";
+
+    // Jump Search
+    cout << "Jump Search Index: " << jump_search(arr, target) << "\n";
+
+    // Ternary Search
+    cout << "Ternary Search Index: " << ternary_search(arr, target) << "\n";
+
+    // Two Pointer Search for Sum
+    int sumTarget = 8;
+    cout << "Two Pointer Search for Sum " << sumTarget << ": "
+         << (two_pointer_search(arr, sumTarget) ? "Yes" : "No") << "\n";
 
     return 0;
 }
