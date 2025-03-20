@@ -2,7 +2,6 @@
 A collection of reusable code snippets, algorithms, and templates to speed up competitive programming and problem-solving.
 
 ## 📌 Features
-✅ Pre-written code snippets for common operations  
 ✅ Optimized algorithm templates for fast implementation  
 ✅ Test cases to verify correctness  
 ✅ Well-structured folder organization  
@@ -11,8 +10,8 @@ A collection of reusable code snippets, algorithms, and templates to speed up co
 ## 📂 Folder Structure
 ```
 Competitive-Coding-Library/  
-├── snippets/        # Short, reusable code snippets  
-├── templates/       # Complete algorithm implementations  
+├── templates/       # Complete algorithm implementations
+│   ├── number_theory/ # number theory algorithms
 │   ├── searching/   # Searching algorithms (e.g., binary search)  
 │   ├── sorting/     # Sorting algorithms  
 │   ├── graphs/      # Graph algorithms  
