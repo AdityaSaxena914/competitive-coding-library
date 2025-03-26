@@ -33,8 +33,7 @@ git clone https://github.com/AdityaSaxena914/competitive-coding-library.git
 cd competitive-coding-library
 ```
 
-### 2️⃣ Use a Snippet or Template
-- **C++ Fast I/O Snippet** → `snippets/fast_io.cpp`
+### 2️⃣ Use a Template
 - **Binary Search Template** → `templates/searching/binary_search.h`
 - **Include all algorithms** → `#include "templates/competitive.h"`
 
